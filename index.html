@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Coding By Nikko -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./icons/favicon.svg" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">Weather Life</header>
+      <select  id="City" class="select" name="bayonne"></select>
+      <p><img id="Weather" class="image" src="./icons/blank.png" alt="Weather Image" /></p>
+      <p id="DescriptionInner" class="inner"></p>
+      <p><img id="TempIcon" class="icon" src="./icons/temperature.png" alt="Temperature Icon" /></p>
+      <p id="TempInner" class="inner"></p>
+      <p><img id="HumidityIcon" class="icon" src="./icons/humidity.png" alt="Humidity Icon" /></p>
+      <p id="HumidityInner" class="inner"></p>
+      <p><img id="PressureIcon" class="icon" src="./icons/pressure.png" alt="Pressure Icon" /></p>
+      <p id="PressureInner" class="inner"></p>
+    </div>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="./city.json"></script>
+    <script type="text/javascript">
+      var mydata = JSON.parse(city);
+      html = "";
+      obj = mydata[0];
+      for(var key in obj) {
+      html += "<option value=" + key  + ">" +obj[key] + "</option>"
+      }
+      document.getElementById("City").innerHTML = html;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+html {
+  font-size: 3vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 25vw;
+  margin: auto;
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+}
+
+.wrapper {
+  width: 50vw;
+  background: #fff;
+  border-radius: 1vw;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 1vw 1vw 1vw 1vw rgba(31, 38, 135, 0.4);
+
+}
+
+.wrapper .header {
+  font-weight: bold;
+  font-size: 3vw;
+  margin: auto;
+  display: block;
+}
+
+.wrapper .image {
+  width: 10vw;
+  margin: auto;
+  display: block;
+}
+
+.wrapper .icon {
+  width: 4vw;
+  margin: auto;
+  float: left;
+  display: block;
+}
+
+.wrapper .inner {
+  font-size: 3vw;
+  margin: auto;
+  display: block;
+}
+
+.wrapper .select {
+  font-size: 3vw;
+  text-align: center;
+}
