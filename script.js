@@ -3,7 +3,6 @@ console.log("Weather Life");
 const iconWidget = document.querySelector(".image");
 const {descriptionWidget, tempWidget, humidityWidget, pressureWidget} = document.querySelector(".inner");
 const myCity = document.getElementById('City');
-const API_KEY = 'ENTER YOUR API_KEY';
 
 myCity.addEventListener('click', () => {
     submit(myCity.value);
@@ -21,7 +20,7 @@ async function submit(city) {
 
     console.clear();
 
-    let api_key = API_KEY;
+    let api_key = 'ENTER YOUR API_KEY';
     
     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`, {
         method: "GET"
